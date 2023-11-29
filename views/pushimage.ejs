@@ -1,0 +1,33 @@
+<style>
+input{
+display:block;
+border:3px solid black;
+border-radius:25px;
+opacity:80%
+}  
+
+input:hover{
+background-color:black;
+color:white;
+}
+
+
+.cntpush{
+padding:20px;
+border:3px solid red;
+}
+</style>
+
+<div id="cntpush" name="cntpush"  style="margin-left:190px ; margin-top : 40px " >
+<form  action= "/pushimage" method="post">
+enter osname: <input type="text" name="osname" id= "osname"  placeholder="Ex: os1 "/><br />
+
+enter commit name: <div style=" border:'3px  solid red '"><input type="text" name="cmtname" id="cmtname" placeholder="Ex: os1:v1.0" /><br />
+
+enter tagname: <input type="text" name="tagname" id="tagname" placeholder="docker-acc id/commitname"/><br />
+enter credentials:<br />
+docker-userid:<input type="text" name="userid" id="userid" placeholder="Ex:harinadh14" />
+password: <input type="password" name="dckpassword" id= "dckpassword"  placeholder="docker-acc password"/>
+<div style="margin-left:70px ; margin-top : 30px ;widht:190px "><input type="submit" value= "create" /></div>
+</form>
+</div>

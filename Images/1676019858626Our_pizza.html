@@ -1,0 +1,110 @@
+
+<html>
+    <head>
+        <title>
+            PizzA
+        </title>
+        
+        <style>
+            body{background-image:url("https://i.etsystatic.com/34796546/r/il/2a8042/3780752917/il_fullxfull.3780752917_nrbe.jpg");background-size: cover;background-size:135% 100%;}
+            button{background-color:yellow;cursor:pointer;padding:15px;}
+            marquee{background-color:yellow;color:Red;font-weight:bolder;}
+            form{accent-color:yellow;}
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <marquee>Hurry up! and grab the best offer......</marquee>
+        
+        <header><h2><b><center>OUR PIZZA STORE</center></b></h2><br>
+        <h3><span style="float:right;">Eat your  perfect ever customized & Shaped Pizza..... </span></h3>
+        </header>
+        
+        <br><br><br>
+        
+        <main>
+            
+            
+            <section>
+                <h3>Choose your conveniet delivery method</h3>
+                <input type="radio" name="deliver-method">Home-Delivery<br>
+                <input type="radio" name="deliver-method">Pickup
+            </section>
+            
+            <section>
+                <h2>Home-Delivery??</h2>
+                <form method="GET" action="order-placemnet.php">
+                    <h3>Address</h3>
+                    <input name="Customer" placeholder="Your name"><br>
+                    <input name="Customer" placeholder="address"><br>
+                    <input name="Customer" placeholder="Door Number"><br>
+                    <input name="Customer" placeholder="Zip code"><br>
+                    <input name="Customer" placeholder="Phone number"><br>
+                    
+                    <h3>Choose-Style</h3>
+                    <input type="radio" name="menu">Veg<br>
+                    <input type="radio" name="menu">Non-Veg<br>
+                    
+                    <h3>Veg???</h3>
+                    <input name="style" type="checkbox" value="Paneer">Paneer<br>
+                    <input name="style" type="checkbox" value="Butter">butter<br>
+                    <input name="style" type="checkbox" value="Corn">Corn<br>
+                    
+                    <h3>Non-Veg??</h3>
+                    <input name="style" type="checkbox" value="Chicken Keema">Chicken Keema<br>
+                    <input name="style" type="checkbox" value="Chicken Tandoori">Chicken Tandoori<br>
+                    <input name="style" type="checkbox" value="Chicken barbecue">Chicken barbecue<br>
+                    
+                    <h3>Toppins</h3>
+                    <input name="Toppins" type="checkbox" value="Pepporoni">Pepporoni<br>
+                    <input name="Toppins" type="checkbox" value="Cheese">Cheesy<br>
+                    <input name="Toppins" type="checkbox" value="Sause">Sausy<br>
+                    <input name="Toppins" type="checkbox" value="Chilly">Chilly<br>
+                    <input name="Toppins" type="checkbox" value="Mayonese">Mayonese<br>
+                    
+                    <h3>Extras</h3>
+                    <input type="radio" name="extras">Coca-Cola<br>
+                    <input type="radio" name="extras">Thums-Up<br>
+                    <input type="radio" name="extras">Pepsi<br>
+                    
+                    
+                    <h3>Shape</h3>
+                    <select name="Shape">
+                        <option value="round">Round - Rs199</option>
+                        <option value="Rectangle">Rectangle - Rs249</option>
+                        <option value="Diamond">diamond - Rs349</option>
+                        
+                    </select>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <button>Let's Go</button>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    
+                </form>
+            </section>
+            
+        
+            
+            
+            
+        </main>
+        
+        <footer>
+            <center>
+                &copy;Copyright
+                <br>
+                <a href="#">Terms of Service</a>
+                <br>
+                <a href="#">About us</a>
+                <br>
+                <a href="#">Contact Us</a>
+            </center>
+        </footer>
+        
+    </body>
+    
+</html>

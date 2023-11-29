@@ -1,0 +1,24 @@
+<head><script>
+
+function navigation()
+{
+   y = confirm("choose ok to navigate from here or choose cancel to stay here ")
+//document.location="1.html";
+if (y)
+{
+ alert("you r navigating to : "+ document.location);
+  document.location="1.html";
+}
+else
+{
+document.write("you are choosen to stay here ;;;;");
+}
+
+}
+</script>
+</head>
+<body>
+<div onclick= "navigation()">this is clickable also </div>
+
+
+</body>

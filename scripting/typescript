@@ -1,0 +1,22 @@
+Script started on 2023-02-03 08:27:14+0000
+]0;root@ip-172-31-35-241:~/shinchan/scripting[?1034h[root@ip-172-31-35-241 scripting]# ls
+[0m[38;5;34mscript1.sh[0m  typescript
+]0;root@ip-172-31-35-241:~/shinchan/scripting[root@ip-172-31-35-241 scripting]# script1.sh
+/root/shinchan/scripting/script1.sh: line 2: user: command not found
+hello harinadh   welcome
+]0;root@ip-172-31-35-241:~/shinchan/scripting[root@ip-172-31-35-241 scripting]# script1.sh harindh
+/root/shinchan/scripting/script1.sh: line 2: user: command not found
+hello harinadh   welcome
+]0;root@ip-172-31-35-241:~/shinchan/scripting[root@ip-172-31-35-241 scripting]# script1.sh harindh-harindhuharindhsharindheharindhrharindh:harindh
+/root/shinchan/scripting/script1.sh: line 2: user: command not found
+hello harinadh   welcome
+]0;root@ip-172-31-35-241:~/shinchan/scripting[root@ip-172-31-35-241 scripting]# cd ..
+]0;root@ip-172-31-35-241:~/shinchan[root@ip-172-31-35-241 shinchan]# scrp[Kipr[Kti[K1.sh
+/root/shinchan/scripting/script1.sh: line 2: user: command not found
+hello harinadh   welcome
+]0;root@ip-172-31-35-241:~/shinchan[root@ip-172-31-35-241 shinchan]# cd scripting/
+]0;root@ip-172-31-35-241:~/shinchan/scripting[root@ip-172-31-35-241 scripting]# dir
+script1.sh  typescript
+]0;root@ip-172-31-35-241:~/shinchan/scripting[root@ip-172-31-35-241 scripting]# c[Kvim script1.sh 
+[?1049h[>4;2m[?1h=[?2004h[?1004h[1;31r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[31;1H"script1.sh" 3L, 63B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[34m#!/usr/bin/bash[m
+user [38;5;130m=[m [35m$1[m[2;10H[K[3;1H[38;5;130mecho[m[31m [m[38;5;130m"[m[31mhello harinadh  [m[35m$user[m[31m welcome[m[38;5;130m"[m[3;37H[K[4;1H[94m~                                                               [5;1H~                                                               [6;1H~                                                               [7;1H~                                                               [8;1H~                                                               [9;1H~                                                               [10;1H~                                                               [11;1H~                                                               [12;1H~                                                               [13;1H~                                                               [14;1H~                                                               [15;1H~                                                               [16;1H~                                                               [17;1H~                                                               [18;1H~                                                               [19;1H~                                                               [20;1H~                                                               [21;1H~                                                               [22;1H~                                                               [23;1H~                                                               [24;1H~                                                               [25;1H~                                                               [26;1H~                                                               [27;1H~                                                               [28;1H~                                                               [29;1H~                                                               [30;1H~                                                               [m[31;47H3,21[10CAll[3;21H[?25h[?4m[?25l[31;37H^[[3;21H[31;39H[[3;21H[31;37H   [3;21H[31;37H^[[3;21H[31;39H[[3;21H[31;40H>[3;21H[31;41H0[3;21H[31;37H     [3;21H[?12$p[?25h[?25l[31;37H~@k[3;21H[31;37H   [2;9H[31;47H2,9 [2;9H[?25h[?25l[31;37H~@k[2;9H[31;37H   [2;9H[?25h[?25l[31;37H~

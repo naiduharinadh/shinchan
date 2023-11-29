@@ -1,0 +1,184 @@
+<!--
+this is next page to the log in 
+<br />
+welcome to <br />
+name: <%= name %><br />
+userid: <%= userid %><br />
+emailid: <%= mailid %> <br />
+phoneno: <%= phone %><br />
+<br />
+
+host your page and upload the entire os in the easy way with out any knowledge about docker requirements 
+<form action="/cntimage" method="post" >
+<input type="submit" value="lets get started" />
+</form>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+#root{
+
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    height: 60px;
+    padding: 3px;
+}
+
+ #child1{
+  
+  height: 43px;
+  width: 43px;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin-left: 90%;
+  margin-top: -1%;
+  
+}
+
+#submit{
+    border: 3px solid transparent ;
+    border-radius: 20px;
+    color:white;
+    background-color: rgb(212, 30, 30); 
+     border-radius: 15px;
+     padding: 10px;
+     margin:10px;
+     width:8em;
+}
+#submit:hover { 
+    background-color: white; 
+    color:black ; 
+    cursor: pointer;
+}
+body{
+    text-decoration-color:red;
+    background-image: url('https://media2.giphy.com/media/cInZt2miwVzxAiqjLU/source.gif');
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+}
+
+#topdiv{
+    background-color: azure;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    padding: 12px;
+    width:12em;
+    height: 7em;
+
+}
+
+#mid{
+    color:red;
+    border: 3px solid transparent; 
+    width: 50% ;
+    padding: 15px; 
+    border-radius: 9%;
+    margin-left: 170px;
+    margin-top: 70px;
+}
+#sub{
+    padding-left: 250px;
+}
+
+.dropbtn {
+  background-color: #c8893b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border: 3px solid transparent ;
+    border-radius: 20px;
+    color:white;
+    background-color: rgb(212, 30, 30); 
+     border-radius: 15px;
+     padding: 10px;
+     margin:10px;
+     width:8em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  padding-left: -1%;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 15px;
+     padding: 10px;
+     margin:10px;
+     width:8em;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 19px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #d2662f;}
+
+
+</style>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+
+   <!-- <div id="topdiv" name="topdiv">
+        your credentials are: 
+
+        name: <%= name %><br />
+        userid: <%= userid %><br />
+        emailid: <%= mailid %> <br />
+        phoneno: <%= phone %><br />
+       <br />
+    </div> -->
+
+<div id="root" name="root">
+    <div class="dropdown">
+        <button class="dropbtn"><%= userid %></button>
+        <div class="dropdown-content">
+          <a href="#">name: <%= name %></a>
+          <a href="#">userid: <%= userid %></a>
+          <a href="#">emailid: <%= mailid %></a>
+          <a href="#">phoneno: <%= phone %></a>
+        </div>
+      </div>
+      <div id="child1" name="child1">child2</div>
+</div>
+
+
+
+
+
+    <div id="mid" name="mid">host your page and upload the entire os in the easy way with out any knowledge about docker requirements
+    <form action="/cntimage" method="post" >
+        <div name="sub" id="sub">
+    <input type="submit" value="let's get started " id="submit" name="submit" />
+        </div>
+        </form>
+        </div>
+   
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!--
+<form action="/signup" method= "post">
+     enter name:<input type ="text" name= "name" id="name" />
+     enter userid:<input type ="text" name= "userid" id="userid" />
+     enter phone:<input type ="text" name= "phone" id="phone" />
+     enter maild:<input type ="text" name= "emailid" id="emailid" />
+     enter passeword:<input type ="password" name= "password" id="password" />
+    			<input type ="submit" value="SignUp"  />
+        </form>
+<%= msg %>
+<br />
+already have account.then: <form action="/preacc" method="post">
+<input type="submit" value="login"/>
+</form>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding:0px;margin:0px;box-sizing:border-box; }
+        .a{display:block;align-items: center;display: flex;justify-content: baseline;}
+        #main{ position: absolute;top:40%;left: 50%;transform: translate(-50% , -50%);background-color: black;padding:3em 2.5em 4em 2.5em;border-radius: 2em;}
+        img{width:2em;margin-right: 0.7em;background-color: white;padding:1px;border-radius: 2em;}
+        input{height:2.5em;width:15em;border-radius: 0px;margin:0.3em; border-color: gray;background-color: black;color: white;border-width: 0px 0px 1px 0px;}
+
+
+        body{background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dbdb4f38-94c9-45d2-bd44-a598d94a4dc0/d4gz4lh-1fc5a06f-dc74-4cc7-bb20-8146e35ee3f6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RiZGI0ZjM4LTk0YzktNDVkMi1iZDQ0LWE1OThkOTRhNGRjMFwvZDRnejRsaC0xZmM1YTA2Zi1kYzc0LTRjYzctYmIyMC04MTQ2ZTM1ZWUzZjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nZ9DK7pHdUXRrbU6pLvU2HfJzeUAov47QwCaBzmRDlY");background-size: cover;background-repeat: no-repeat;height:100vh;background-position: center center;}
+        input[type="submit"]{border:white 1em;background-color: aquamarine;color:black;font-weight: bolder;text-transform: capitalize;border-radius: 2em;; }
+  .signup1:hover{
+		cursor: pointer;
+}
+    </style>
+
+</head>
+<body>
+<script>
+alert("<%= msg %> ")
+</script>
+    <div id="main">
+    <form action="/signup" method= "post">
+    <div class ="signup" id= "signup1" style="color:white;display: flex;justify-content: center;padding-bottom: 2em;font-size: 1.2em;text-decoration: underline;color:aquamarine">SIGNIN</div>
+    <div class="a"><img src="icons8-male-user-100.png" alt=""><input type ="text" name= "name" id="name" placeholder="username"/></div>
+    <div class="a"><img src="icons8-digi-id-100.png" alt=""><input type ="text" name= "userid" id="userid" placeholder="userid" /></div>
+    <div class="a"><img src="icons8-phone-90.png" alt=""><input type ="text" name= "phone" id="phone" placeholder="phone number"/></div>
+    <div class="a"><img src="icons8-mail-90.png" alt=""><input type ="email" name= "emailid" id="emailid" placeholder="emailid"/></div>
+    <div class="a"><img src="icons8-unlock-private-100.png" alt=""><input type ="password" name= "password" id="password" placeholder="password"/></div>
+<div class = "signup" name="signup" ><div class="a" style=" display: flex;justify-content: center;padding-top: 2em; " ><input class ="signup1" type="submit" value="signup"/></div></div>
+        </form>
+    </div>
+<div style="display:flex; float:right;">
+<div style="color:transparent;">
+<%= msg %>
+</div>
+<div style="display: flex;align-items:center; margin:1em;">
+<label style="padding-right: 1em;color:white">All Ready You Have a Account Then:</label><form action="/preacc" method="post">
+<input  class="signup1" type="submit" value="login" style="display:inline"/>
+</div>
+</div>
+
+</form>
+</body>
+</html>

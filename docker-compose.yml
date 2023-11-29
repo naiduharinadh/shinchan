@@ -1,0 +1,37 @@
+version: '3.8'  # Use the appropriate version of Docker Compose
+
+services:
+  # WordPress service
+  wordpress:
+    image: wordpress:latest
+    networks:
+      - myWordpressNet
+    ports:
+      - "8181:80"  # Map container's port 80 to host port 8080
+    environment:
+      WORDPRESS_DB_HOST: db  # MySQL database host (service name in the same compose file)
+      WORDPRESS_DB_NAME: WPDB1  # WordPress database name
+      WORDPRESS_DB_USER: harinadh  # WordPress database username
+      WORDPRESS_DB_PASSWORD: harinadh  # WordPress database password
+    volumes:
+      - ./wordpress_data:/var/www/html  # Persist WordPress data
+    depends_on:
+      - db  # Ensure the 'db' service starts before 'wordpress'
+
+  # MySQL service
+  db:
+    image: mysql:latest
+    container_name: mysqldataos
+    networks:
+      - myWordpressNet
+    environment:
+      MYSQL_ROOT_PASSWORD: harinadh  # Root password for MySQL
+      MYSQL_DATABASE: WPDB1  # Create a WordPress database with this name
+      MYSQL_USER: harinadh  # Create a user for WordPress to access the database
+      MYSQL_PASSWORD: harinadh  # Set the password for the WordPress user
+    volumes:
+      - ./db_data:/var/lib/mysql  # Persist MySQL data
+
+networks:
+  myWordpressNet:  # Define the name of the custom network
+    driver: bridge
