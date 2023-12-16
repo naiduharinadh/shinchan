@@ -10,7 +10,7 @@ mongoose.set('strictQuery', true);
 
 const app=express()
 app.use(express.urlencoded({extended: true}));
-const ip = "65.0.94.19";
+const ip = "192.168.126.128";
 //const ip=process.env.x;
 //console.log(process.env.USER);
 console.log(ip);
@@ -101,7 +101,10 @@ app.post("/signup" , async(req,resp) =>{
 
 //		resp.render("login" , {msg:ip});
 //	});
-	       exec ("wpbasefile.sh" + " "+u.userid + "  "+u.emailid+"  " +u.password+"  "+u.name, (err, stdout, stderr)=>{})
+	       exec ("bash" +"  "+"wpbasefile.sh" + " "+u.userid + "  "+u.emailid+"  " +u.password+"  "+u.name, (err, stdout, stderr)=>{
+
+			console.log("this is the out put form the wpbasefile.sh", stdout); 
+	       })
 	       
 	
 
@@ -298,4 +301,4 @@ exec("bash" +"  "+"displayfiles.sh" , (err,stdout, stderr) => {
 
 })
 
-app.listen(2346, (resp) => {console.log("server started in 2346")})
+app.listen(2346, "0.0.0.0", (resp) => {console.log("server started in 2346")})

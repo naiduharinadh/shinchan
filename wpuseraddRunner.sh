@@ -1,2 +1,2 @@
 #!/bin/bash
-$(bash WPuserAddInSQL.sh newuser123 newuser123@gmail.com N@dh23006 newuser123 )
+$(bash WPuserAddInSQL.sh harinadh23223 harinadh23223@gmail.com N@dh2306 harinadh23223 )

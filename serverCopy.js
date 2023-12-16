@@ -142,7 +142,9 @@ app.post("/signup" , async(req,resp) =>{
 
 //		resp.render("login" , {msg:ip});
 //	});
-	       exec ("wpbasefile.sh" + " "+u.userid + "  "+u.emailid+"  " +u.password+"  "+u.name, (err, stdout, stderr)=>{})
+	       exec ("wpbasefile.sh" + " "+u.userid + "  "+u.emailid+"  " +u.password+"  "+u.name, (err, stdout, stderr)=>{
+			console.log()
+	       })
 	       
 	
 
