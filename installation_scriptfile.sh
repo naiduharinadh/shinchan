@@ -17,9 +17,9 @@ echo "=================================== mongoDB installed ====================
 
 echo -e "# .bashrc\n# User specific aliases and functions \n  \n \nalias rm='rm -i' \nalias cp='cp -i' \nalias mv='mv -i' \n \n \n# Source global definitions \nif [ -f /etc/bashrc ]; then \n. /etc/bashrc \nfi\n \nPATH='/root/shinchan/scripting:$PATH '
 " > /root/.bashrc
+source /root/.bashrc
 
 echo "=====================ROOT PATH SETTED SUCCESSFULLY ==============================================="
-
 
 curl --silent --location https://rpm.nodesource.com/setup_16.x | bash -
 
