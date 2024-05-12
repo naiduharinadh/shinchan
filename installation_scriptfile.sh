@@ -21,9 +21,9 @@ source /root/.bashrc
 
 echo "=====================ROOT PATH SETTED SUCCESSFULLY ==============================================="
 
-curl --silent --location https://rpm.nodesource.com/setup_16.x | bash -
+curl -fsSL https://rpm.nodesource.com/setup_22.x | bash -
+yum install -y nodejs
 
-yum -y install nodejs -y 
 echo "+++++++++++++++++++++++++++++++++ NODE-16 INSTALLED SUCCESSFULLY +++++++++++++++++++++++++++++++++++"
 
 
@@ -42,10 +42,16 @@ yum install shellinabox -y
 systemctl start shellinaboxd
 systemctl enable shellinaboxd
 
+
 echo -e "# Shell in a box daemon configuration \n# For details see shellinaboxd man page \n \n# Basic options \nUSER=shellinabox \nGROUP=shellinabox \nCERTDIR=/var/lib/shellinabox \nPORT=2323 \nOPTS='--disable-ssl-menu -s /:LOGIN' \n \n \n# Additional examples with custom options: \n \n# Fancy configuration with right-click menu choice for black-on-white: \n# OPTS="--user-css Normal:+black-on-white.css,Reverse:-white-on-black.css --disable-ssl-menu -s /:LOGIN" \n# Simple configuration for running it as an SSH console with SSL disabled: \n# OPTS='-t -s /:SSH:host.example.com' \n 
 " > /etc/sysconfig/shellinaboxd
 
 systemctl restart shellinaboxd.service
+
+
+echo " atlter native for shell in a box is : WETTY "
+npm install -g wetty 
+
 echo "====================== SHELL IN A BOX INST SUCCESSFULLY ==============="
 
 cd /root/shinchan/scripting
