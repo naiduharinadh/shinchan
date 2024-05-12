@@ -50,7 +50,10 @@ systemctl restart shellinaboxd.service
 
 
 echo " atlter native for shell in a box is : WETTY "
-npm install -g wetty 
+# npm install -g wetty 
+
+# update the ssh-host ip with the latest ip address and expose the port the out side via firewall-cmd
+docker run -itd --rm -p 3000:3000 wettyoss/wetty --ssh-host=192.168.126.131
 
 echo "====================== SHELL IN A BOX INST SUCCESSFULLY ==============="
 
